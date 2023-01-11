@@ -34,7 +34,7 @@ header h1 {
     color: #00C9FF;
 }
 
-header button {
+header #play-button {
     padding: 1rem 1.5rem;
     background-color: #00C9FF;
     border: none;
@@ -65,6 +65,10 @@ main #grid-box {
     flex-wrap: wrap;
 }
 
+main #grid-box.visible {
+    opacity: 1;
+}
+
 main #grid-box .cell {
     height: 10%;
     width: 10%;
@@ -73,6 +77,10 @@ main #grid-box .cell {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main #grid-box .cell.selected {
+    background-color: #00C9FF;
 }
 
 main #grid-box .cell span {
