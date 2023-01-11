@@ -80,8 +80,6 @@ main #grid-box.visible {
 }
 
 main #grid-box .cell {
-    height: 10%;
-    width: 10%;
     border: 1px solid transparent;
     background-color: white;
     background-clip: padding-box;
@@ -93,8 +91,11 @@ main #grid-box .cell {
 
 main #grid-box .cell.selected {
     background-color: #00C9FF;
+    color: white;
+    border-color: white;
 }
 
 main #grid-box .cell span {
     font-size: 1.5rem;
+    color: inherit;
 }
