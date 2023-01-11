@@ -4,3 +4,77 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* GENERALI */
+body * {
+    font-family: 'Roboto', sans-serif;
+    color: #303030;
+}
+
+.container {
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: white;
+}
+
+header .top-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: #00C9FF;
+}
+
+header button {
+    padding: 1rem 1.5rem;
+    background-color: #00C9FF;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    height: calc(100vh - 100px);
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #grid-box {
+    height: calc(80vh - 100px);
+    width: calc(80vh - 100px);
+    background-color: white;
+    border: 1px solid #00C9FF;
+    opacity: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #grid-box .cell {
+    height: 10%;
+    width: 10%;
+    border: 1px solid #00C9FF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #grid-box .cell span {
+    font-size: 1.5rem;
+}
